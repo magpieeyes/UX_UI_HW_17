@@ -1,0 +1,221 @@
+body {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 auto;
+}
+
+/* nav css*/
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 80px;
+    /* margin: auto; */
+    vertical-align: top;
+    width: 100vw;
+    background-color: #121212;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: inherit;
+}
+
+.logoImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    /* scale: .8; */
+    /* padding: 15px; */
+    vertical-align: middle;
+    gap: 2vw;
+    
+}
+
+.logoImg img {
+    /* position: sticky; */
+    width: inherit;
+    height: inherit;
+}
+
+.logo p {
+    font-weight: 300;
+    font-size: 150%;
+    background: var(--led-light-2, radial-gradient(107.67% 107.67% at 49.30% 1.26%, #FFF 0%, #FFF9E6 27.56%, #FFF 54.68%, #FFF9E6 80.93%, #FFF 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.options {
+    display: inline-block;
+    gap: 20px;
+}
+
+.options li {
+    display: inline-block;
+    font-size: 24px;
+    padding: 30px;
+}
+
+/*home page content*/
+
+.home {
+    background: linear-gradient(180deg, #121212 17.50%, #39342E 55.52%, #121212 94.35%);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    padding: 80px 5% 0 5%;
+}
+
+#cluster {
+    /* margin: 0 auto; */
+    width: 50%;
+}
+
+#cluster img {
+    width: 100%;
+    height: 80vh;
+}
+
+.divider {
+    height: 400px;
+    width: 2px;
+    /*position: absolute;
+    left: 718px;*/
+}
+
+.content {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    /* align-self: stretch; */
+    height: 100%;
+    width: 50%;
+    /* margin: 0 auto; */
+}
+
+.text {
+    /* display: flex;
+    height: auto;-
+    padding: 20px; */
+    display: flex;
+    width: 100%;
+    /* height: 181px; */
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.text p {
+    font-family: 'Josefin Sans', Sans-Serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 120% */
+}
+
+.julieNg {
+    scale: .5;
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+    z-index: 1;
+    /*FINISH EDITING THIS TO MAKE IT STAY WITHOUT ABSOLUTE*/
+}
+
+#julieNgText {
+    background: radial-gradient(67.25% 143.89% at 50.03% 43.73%, #FFF 0%, #FFF3CA 16.67%, #FFF 33.33%, #FFF2C4 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
+}
+
+.arrow {
+    position: absolute;
+    top: 80vh;
+    left: center;
+}
+
+/*About CSS* /
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+
+.abouth1 {
+    padding-left: 10vh;
+    align-self: first baseline;
+    /* margin-left: ; * /
+}
+
+.abouth1 h1 {
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.aboutContent {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 10% 0 10%; * /
+}
+
+.myPicture {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    padding-right: 1%;
+}
+
+.myPicture img {
+    height: inherit;
+}
+
+.aboutDivider {
+    width: 20px;
+    padding: 0 20px 0 20px;
+    text-align: center;
+} 
+
+.aboutDivider img {
+    height: 100%;
+    width: 2px;
+}
+
+.aboutText {
+    width: 50%;
+}
+
+.aboutText p {
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+*/
