@@ -2,6 +2,15 @@ body {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     margin: 0 auto;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+section {
+    background: linear-gradient(180deg, #121212 17.50%, #39342E 55.52%, #121212 94.35%);
+    background-size: cover;
+    max-width: 100vw;
+    
 }
 
 /* nav css*/
@@ -34,7 +43,6 @@ nav {
     /* padding: 15px; */
     vertical-align: middle;
     gap: 2vw;
-    
 }
 
 .logoImg img {
@@ -51,23 +59,33 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .options {
+    padding-right: 40px;
+}
+
+.options ul {
     display: inline-block;
     gap: 20px;
 }
 
-.options li {
+.options ul li {
     display: inline-block;
     font-size: 24px;
     padding: 30px;
 }
 
+.options li:hover {
+    font-weight: bold;
+    background: radial-gradient(67.25% 143.89% at 50.03% 43.73%, #FFF 0%, #FFF3CA 16.67%, #FFF 33.33%, #FFF2C4 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
+}
+
 /*home page content*/
 
 .home {
-    background: linear-gradient(180deg, #121212 17.50%, #39342E 55.52%, #121212 94.35%);
-    background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: center; 
@@ -94,7 +112,7 @@ nav {
     left: 718px;*/
 }
 
-.content {
+.homeContent {
     /* display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,7 +156,6 @@ nav {
     top: 1vh;
     left: 1vw;
     z-index: 1;
-    /*FINISH EDITING THIS TO MAKE IT STAY WITHOUT ABSOLUTE*/
 }
 
 #julieNgText {
@@ -152,8 +169,21 @@ nav {
 .arrow {
     position: absolute;
     top: 80vh;
-    left: center;
+    left: 65%;
+    
 }
+
+#arrowMain {
+    position: absolute;
+    left: 65%;
+
+}
+
+#afterImage {
+    position: absolute;
+    left: 65%;
+}
+
 
 /*About CSS* /
 .about{
@@ -219,3 +249,241 @@ nav {
     line-height: normal;
 }
 */
+
+/*My Skills page*/
+
+.mySkills {
+    height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+.content {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    background: radial-gradient(67.25% 143.89% at 50.03% 43.73%, #FFF 0%, #FFF3CA 16.67%, #FFF 33.33%, #FFF2C4 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
+    font-size: 40px;
+}
+
+.mySkillsContent {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    min-width: fit-content;
+    /* width: 90vw; */
+    padding: 20px;
+    gap: 50px;
+    margin: 0 5vw 0 5vw;
+}
+
+.card {
+    /* gap: 50px; */
+    height: fit-content;
+}
+
+.textFrame {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: left;
+    width: 300px;
+    height: 40vh;
+    padding: 5%;
+    gap: 4px;
+    border-radius: 20px;
+    border: 1px solid #FF981E;
+    background: linear-gradient(180deg, #F57500 0%, rgba(245, 117, 0, 0.36) 100%);
+
+    /* skill cards */
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.textFrame h4 {
+    font-size: 32px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.textFrame ul, .textFrame ul li {
+    height: fit-content;
+    line-height: 24px;
+    width: 100%;
+}
+
+.shadow {
+    display: flex;
+    width: 330px;
+    height: 80px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background: var(--floating-shadow, radial-gradient(67.55% 50.00% at 50.00% 50.00%, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%));
+}
+
+/*My Work page*/
+
+.myWork {
+    height: fit-content;
+}
+.myWorkContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vw 0 10vw;
+    width: 100vw;
+}
+
+/* .myWorkTitle {
+    padding: 20px;
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+} */
+
+.myWorkGrid {
+    width: 75vw;
+    height: fit-content;
+    padding: 0 20px 0 20px;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+        "CS1h3 CS1h3 CS1Image CS1Image"
+        "CS1Descript CS1Descript CS1Image CS1Image"
+        "CS2Image CS2Image CS2h3 CS2h3"
+        "CS2Image CS2Image CS2Descript CS2Descript";
+    border-width: 3px;
+    border-color: white;
+}
+
+.mWCGridArea {
+    width: 35vw;
+    /* height: fit-content;
+    min-height: 300px; */
+}
+
+#CS1Title {
+    grid-area: CS1h3;
+    height: fit-content;
+}
+
+/* #CS1Title:hover {
+    background: radial-gradient(67.25% 143.89% at 50.03% 43.73%, #FFF 0%, #FFF3CA 16.67%, #FFF 33.33%, #FFF2C4 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
+} */
+
+#CS1Descript {
+    grid-area: CS1Descript;
+    height: 10vh;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#CS1Image {
+    grid-area: CS1Image;
+    background-image: url("../images/CaseStudy-RNH.png");
+    height: 600px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+#CS2Title {
+    grid-area: CS2h3;
+    height: fit-content;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+}
+
+/* #CS2Title:hover {
+    background: radial-gradient(67.25% 143.89% at 50.03% 43.73%, #FFF 0%, #FFF3CA 16.67%, #FFF 33.33%, #FFF2C4 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
+} */
+
+#CS2Descript {
+    grid-area: CS2Descript;
+    height: 10vh;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#CS2Image {
+    grid-area: CS2Image;
+    background-image: url("../images/CaseStudy-CBSA.png");
+    height: 600px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.CS1h3, .CS2h3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+@media only screen and (min-width: 0px) {
+    .options ul {
+        display: none;
+    }
+    .mySkillsContent {
+        flex-direction: column;
+    }
+    .mySkills {
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .options ul {
+        display: inline-block;
+    }
+    .options img {
+        display: none;
+    }
+    .mySkillsContent {
+        flex-direction: row;
+    }
+}
