@@ -3,8 +3,9 @@
         <head>
             <link href="css/style.css" rel="stylesheet" type="text/css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
         </head>
         <body>
             <header class="nav">
@@ -38,7 +39,7 @@
                         <p><span id="julieNgText">julie ng </span> is a freelance designer who specializes in UI and IxD. Curiosity, challenge, and empathy fuel her passion for creating and optimizing experiences that immerse the user.
                         </p>
                     </div>
-                    <div class="arrow">
+                    <div class="arrow" id="arrow">
                         <img id="arrowMain" src="images/down-arrow-anim-2.png">
                         <img id="afterImage" src="images/down arrow afterimage-anim-2.png">
                     </div>
@@ -64,7 +65,7 @@
             <!--My Skills-->
             <section class="mySkills">
                 <div class="content>">
-                    <div class="title">
+                    <div class="title" id="title">
                         <h1>My Skills</h1>
                     </div>
                     <div class="mySkillsContent">
@@ -85,7 +86,7 @@
                         <!--UI skills card-->
                         <div class="card">
                             <div class="textFrame">
-                                <h4>UX Skills</h4>
+                                <h4>UI Skills</h4>
                                 <ul>
                                     <li>Accessible Design</li>
                                     <li>Data Visualization</li>
@@ -102,7 +103,7 @@
                         <!--Coding Languages-->
                         <div class="card">
                             <div class="textFrame">
-                                <h4>UX Skills</h4>
+                                <h4>Coding Languages</h4>
                                 <ul>
                                     <li>HTML</li>
                                     <li>CSS</li>
@@ -153,5 +154,20 @@
                     </div>
                 </div>
             </section>
+            <footer>
+                <div class="footer">
+                    <div class="Contact">Let's get in touch!</div>
+                    <div class="links">
+                        <div class="email">
+                            <img class="emailIcon" src="images/email.png"> <p>julie.ng.382@gmail.com</p>
+                        </div>
+                        <div class="socialMedia">
+                            <img class="instagram" src="images/instagram.png">
+                            <img class="linkedin" src="images/linkedin.png">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="js/index.js"></script>
         </body>
     </html>
