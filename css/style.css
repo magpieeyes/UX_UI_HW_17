@@ -25,6 +25,7 @@ nav {
     vertical-align: top;
     width: 100vw;
     background-color: #121212;
+    z-index: 1;
 }
 
 .logo {
@@ -426,13 +427,14 @@ h1 {
     height: fit-content;
 }
 
-/* #CS1Title:hover {
+.CS1h3 h3:hover {
     background: radial-gradient(67.25% 143.89% at 50.03% 43.73%, #FFF 0%, #FFF3CA 16.67%, #FFF 33.33%, #FFF2C4 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
-} */
+    text-decoration: none;
+}
 
 #CS1Descript {
     grid-area: CS1Descript;
