@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
@@ -10,13 +14,41 @@ section {
     background: linear-gradient(180deg, #121212 17.50%, #39342E 55.52%, #121212 94.35%);
     background-size: cover;
     max-width: 100vw;
-    
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+    background: radial-gradient(67.25% 143.89% at 50.03% 43.73%, #FFF 0%, #FFF3CA 16.67%, #FFF 33.33%, #FFF2C4 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: #ffe366;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff4c2;
+    text-decoration: none;
+}
+
 
 /* nav css*/
 nav {
     display: flex;
-    padding: 10px;
+    /* padding: 10px; */
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -24,7 +56,8 @@ nav {
     /* margin: auto; */
     vertical-align: top;
     width: 100vw;
-    background-color: #121212;
+    background-color: rgba(18,18,18,0.9);
+    
     z-index: 1;
 }
 
@@ -40,7 +73,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: inherit;
-    /* scale: .8; */
+    scale: .8;
     /* padding: 15px; */
     vertical-align: middle;
     gap: 2vw;
@@ -75,15 +108,6 @@ nav {
     padding: 30px;
 }
 
-.options li:hover {
-    font-weight: bold;
-    background: radial-gradient(67.25% 143.89% at 50.03% 43.73%, #FFF 0%, #FFF3CA 16.67%, #FFF 33.33%, #FFF2C4 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
-}
-
 /*home page content*/
 
 .home {
@@ -92,18 +116,20 @@ nav {
     justify-content: center; 
     align-items: center;
     height: 100vh;
-    gap: 20px;
-    padding: 80px 5% 0 5%;
+    gap: 1vw;
+    padding: 10px 0 0 0;
 }
 
 #cluster {
     /* margin: 0 auto; */
-    width: 50%;
+    width: 48%;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #cluster img {
-    width: 100%;
     height: 80vh;
+    /* height: 80vh; */
 }
 
 .divider {
@@ -126,7 +152,7 @@ nav {
     gap: 42px;
     /* align-self: stretch; */
     height: 100%;
-    width: 50%;
+    width: 48%;
     /* margin: 0 auto; */
 }
 
@@ -137,7 +163,8 @@ nav {
     display: flex;
     width: 100%;
     /* height: 181px; */
-    padding: 20px;
+    padding-left: 10px;
+    padding-right: 15vw;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
@@ -169,7 +196,7 @@ nav {
 
 .arrow {
     position: absolute;
-    top: 65vh;
+    top: 68vh;
     left: 65%;
     
 }
@@ -215,24 +242,24 @@ nav {
     }
   }
 
-/*About CSS* /
+/*About CSS*/
 .about{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10%;
+    padding: 10vw;
 }
 
 .abouth1 {
-    padding-left: 10vh;
-    align-self: first baseline;
-    /* margin-left: ; * /
+    /* padding-left: 10vw; */
+    align-self: flex-start;
+    
 }
 
-.abouth1 h1 {
+/* .abouth1 h1 {
     font-size: 60px;
     font-weight: normal;
-}
+} */
 
 .aboutContent {
     width: 80%;
@@ -241,7 +268,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* margin: 0 10% 0 10%; * /
+    /* margin: 0 10% 0 10%; */
 }
 
 .myPicture {
@@ -278,7 +305,7 @@ nav {
     font-weight: 400;
     line-height: normal;
 }
-*/
+
 
 /*My Skills page*/
 
@@ -286,24 +313,28 @@ nav {
     height: 100vh;
     padding-top: 10vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    width: 100vw;
+    align-content: center;
+    /* width: 100vw; */
 }
+
 .content {
-    width: fit-content;
+    /* width: fit-content;
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: center; */
     margin: 0 auto;
     margin-top: 20%;
 }
+
 .title {
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    width: 100%;
+    padding-left: 10vw;
+    /* width: 100%; */
+    align-self: flex-start;
 }
 
 h1 {
@@ -311,8 +342,8 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
-    font-size: 40px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15), 0px 0px 30px #FFF;
+    font-size: 60px;
 }
 
 .mySkillsContent {
@@ -322,7 +353,8 @@ h1 {
     justify-content: center;
     min-width: fit-content;
     /* width: 90vw; */
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     gap: 50px;
     margin: 0 5vw 0 5vw;
 }
@@ -337,9 +369,8 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
     font-size: 20px;
-    margin: 0 auto;
     text-align: left;
-    width: 300px;
+    width: 25vw;
     height: 40vh;
     padding: 5%;
     padding-top: 30px;
@@ -367,7 +398,7 @@ h1 {
 
 .shadow {
     display: flex;
-    width: 330px;
+    width: 27vwpx;
     height: 80px;
     padding: 30px;
     flex-direction: column;
@@ -383,62 +414,50 @@ h1 {
 .myWork {
     height: fit-content;
 }
+
 .myWorkContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.caseStudies {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* margin: 0 10vw 0 10vw; */
-    width: 100vw;
 }
 
-/* .myWorkTitle {
-    padding: 20px;
-    margin: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-} */
+/* case study 1 */
 
-.myWorkGrid {
+.caseStudy1 {
     width: 75vw;
     height: fit-content;
     padding: 0 20px 0 20px;
     display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-areas:
-        "CS1h3 CS1h3 CS1Image CS1Image"
-        "CS1Descript CS1Descript CS1Image CS1Image"
-        "CS2Image CS2Image CS2h3 CS2h3"
-        "CS2Image CS2Image CS2Descript CS2Descript";
+        "CS1h3 CS1h3 CS1Image CS1Image CS1Image"
+        "CS1Descript CS1Descript CS1Image CS1Image CS1Image"
+        "CS1Descript CS1Descript CS1Image CS1Image CS1Image"
+        "CS1Descript CS1Descript CS1Image CS1Image CS1Image"
+        "CS1Descript CS1Descript CS1Image CS1Image CS1Image"
+        ;
     border-width: 3px;
     border-color: white;
 }
 
-.mWCGridArea {
-    width: 35vw;
-    /* height: fit-content;
-    min-height: 300px; */
-}
-
-#CS1Title {
+#CS1h3 {
     grid-area: CS1h3;
     height: fit-content;
-}
-
-.CS1h3 h3:hover {
-    background: radial-gradient(67.25% 143.89% at 50.03% 43.73%, #FFF 0%, #FFF3CA 16.67%, #FFF 33.33%, #FFF2C4 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
-    text-decoration: none;
+    align-content: center;
 }
 
 #CS1Descript {
     grid-area: CS1Descript;
-    height: 10vh;
+    align-content: center;
+    height: fit-content;
     font-size: 20px;
     line-height: 28px;
 }
@@ -452,22 +471,46 @@ h1 {
     position: relative;
 }
 
+.CS1GridArea {
+    /* width: 35vw; */
+    display: grid;
+    /* height: inherit;
+    min-height: 300px; */
+}
 
-#CS2Title {
+/* case study 2 */
+
+.caseStudy2 {
+    width: 75vw;
+    height: fit-content;
+    padding: 0 20px 0 20px;
+    display: grid;
+    grid-template-rows:  20% 20% 20% 20% 20%;
+    grid-template-columns:  20% 20% 20% 20% 20%;
+    grid-template-areas:
+        "CS2Image CS2Image CS2Image CS2h3 CS2h3"
+        "CS2Image CS2Image CS2Image CS2Descript CS2Descript"
+        "CS2Image CS2Image CS2Image CS2Descript CS2Descript"
+        "CS2Image CS2Image CS2Image CS2Descript CS2Descript"
+        "CS2Image CS2Image CS2Image CS2Descript CS2Descript"
+        ;
+    border-width: 3px;
+    border-color: white;
+}
+
+.CS2GridArea {
+    width: 35vw;
+    /* height: fit-content;
+    min-height: 300px; */
+}
+
+#CS2title {
     grid-area: CS2h3;
     height: fit-content;
     /* display: flex;
     flex-direction: column;
     justify-content: flex-end; */
 }
-
-/* #CS2Title:hover {
-    background: radial-gradient(67.25% 143.89% at 50.03% 43.73%, #FFF 0%, #FFF3CA 16.67%, #FFF 33.33%, #FFF2C4 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
-} */
 
 #CS2Descript {
     grid-area: CS2Descript;
@@ -479,18 +522,12 @@ h1 {
 #CS2Image {
     grid-area: CS2Image;
     background-image: url("../images/CaseStudy-CBSA.png");
-    height: 600px;
-    background-size:contain;
+    width: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
 }
 
-.CS1h3, .CS2h3 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 100%;
-    width: 100%;
-}
 
 h3 {
     font-size: 32px;
@@ -505,23 +542,56 @@ footer {
     align-items: center;
     padding: 20px;
     height: 20vh;
+    gap: 40px;
 }
 
-/* .Contact {
+.contact {
+    font-size: 25px;
+}
+
+.links {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-} */
+    flex-direction: column;
+}
 
 .email {
     display: flex;
     flex-direction: row;
 }
 
+.email:hover {
+    background: radial-gradient(67.25% 143.89% at 50.03% 43.73%, #FFF 0%, #FFF3CA 16.67%, #FFF 33.33%, #FFF2C4 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px #FFF;
+    text-decoration: none;
+}
+
+.email:link {
+    color: white;
+    text-decoration: none;
+}
+
+.email:active {
+    color: yellow;
+    text-decoration: none;
+}
+
+.email:visited {
+    color: orange;
+    text-decoration: none;
+}
+
 .emailIcon, .instagram, .linkedin{
     width: 40px;
 }
 
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 @media only screen and (min-width: 0px) {
     .clusterimg {
         display: none;

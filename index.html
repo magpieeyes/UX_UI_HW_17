@@ -7,28 +7,31 @@
             <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
         </head>
-        <body>
+        <body class="scroll-container">
+            <!--NAVIGATION-->
             <header class="nav">
                 <nav>
-                    <div class="logo">
-                        <div class="logoImg">
-                            <img src="images/logo.png">
+                    <a href="#top">
+                        <div class="logo">
+                            <div class="logoImg">
+                                <img src="images/logo.png">
+                            </div>
+                            <p>julie ng</p>
                         </div>
-                        <p>julie ng</p>
-                    </div>
+                    </a>
                     <div class="options">
                         <img src="images/hamburgerMenu.png">
                         <ul>
-                            <li>about</li>
-                            <li>skills</li>
-                            <li>work</li>
-                            <li>contact</li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#mySkills">skills</a></li>
+                            <li><a href="#myWork">work</a></li>
+                            <li><a href="#contact">contact</a></li>
                         </ul>
                     </div>
                 </nav>
             </header>
             <!--HOME PAGE-->
-            <section class="home">
+            <section class="home" id="top">
                 <div id="cluster">
                     <img src="images/HeroCluster.svg">
                 </div>
@@ -46,7 +49,7 @@
                 </div>
             </section>
             <!--ABOUT PAGE WAS NOT NEEDED-->
-            <!-- <section class="about" id="about">
+            <section class="about" id="about">
                 <div class="abouth1">
                     <h1>About</h1>
                 </div>
@@ -61,10 +64,10 @@
                         <p>About me text. Lorem ipsum dolor sit amet consectetur. Elit viverra commodo sed consequat tristique morbi eget. Magna tortor hac eu velit mauris sed ut nec risus a rhoncus vitae. <br> <br>About me text. Lorem ipsum dolor sit amet consectetur. Elit viverra commodo sed consequat tristique morbi eget. Magna tortor hac eu velit mauris sed ut nec risus a rhoncus vitae. </p>
                     </div>
                 </div>
-            </section> -->
+            </section>
             <!--My Skills-->
-            <section class="mySkills">
-                <div class="content>">
+            <section class="mySkills" id="mySkills">
+                <!-- <div class="content>"> -->
                     <div class="title" id="title">
                         <h1>My Skills</h1>
                     </div>
@@ -93,7 +96,7 @@
                                     <li>Wireframes and page layout</li>
                                     <li>Aesthetics</li>
                                     <li>Branding</li>
-                                    <li> Color Theory</li>
+                                    <li>Color Theory</li>
                                     <li>Gestalt Principles</li>
                                     <li>Icon Design</li>
                                 </ul>
@@ -119,54 +122,68 @@
                 </div>
             </section>
             <!--My Work Page-->
-            <section class="myWork">
+            <section class="myWork" id="myWork">
                 <div class="myWorkContent">
                     <div class="title">
                         <h1>My Work</h1>
                     </div>
-                    <div class="myWorkGrid">
-                        <!--Case Study 1-->
-                        <!-- <div class="caseStudy"> -->
-                            <!-- <div class="CS1Text"></div> -->
-                            <div id="CS1Title" class="mWCGridArea">
-                                <div class="CS1h3">
-                                    <a href="https://magpieeyes.github.io/UX_UI_HW_20/"><h3>Roger Neilson House Site Redesign</h3></a>
+                    <div class="caseStudies">
+                        <div class="caseStudy1">
+                            <!--Case Study 1-->
+                            <!-- <div class="caseStudy"> -->
+                                <!-- <div class="CS1Text"></div> -->
+                                <div id="CS1h3" class="CS1GridArea">
+                                    <div class="CS1h3">
+                                        <a href="https://magpieeyes.github.io/UX_UI_HW_20/"><h3>Roger Neilson House Site Redesign</h3></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div id="CS1Descript" class="mWCGridArea">
-                                <p>Roger Neilson House Description. Lorem ipsum dolor sit amet consectetur. Elit viverra commodo sed consequat tristique morbi eget. Magna tortor hac eu velit mauris sed ut nec risus a rhoncus vitae.</p>
-                            </div>    
-                            <div id="CS1Image" class="mWCGridArea"></div>
-                        <!-- </div> -->
-                        <!--Case Study 2-->
-                        <!-- <div class="caseStudy"> -->
-                            <!-- <div class="CS2Text"></div> -->
-                            <div id="CS2title" class="mWCGridArea">
-                                <div class="CS2h3">
-                                    <h3>Canadian Border Service Agency</h3>
+                                <div id="CS1Descript" class="CS1GridArea">
+                                    <p>Roger Neilson House Description. Lorem ipsum dolor sit amet consectetur. Elit viverra commodo sed consequat tristique morbi eget. Magna tortor hac eu velit mauris sed ut nec risus a rhoncus vitae.</p>
+                                </div>    
+                                <div id="CS1Image" class="CS1GridArea">
                                 </div>
-                            </div>
-                            <div id="CS2Descript" class="mWCGridArea">
-                                <p>Canadian Border Service Agency Description. Lorem ipsum dolor sit amet consectetur. Elit viverra commodo sed consequat tristique morbi eget. Magna tortor hac eu velit mauris sed ut nec risus a rhoncus vitae.</p>
-                            </div>    
-                            <div id="CS2Image" class="mWCGridArea"></div>
-                        <!-- </div> -->
+                        </div>
+                        <div class="caseStudy2">
+                            <!-- </div> -->
+                            <!--Case Study 2-->
+                            <!-- <div class="caseStudy"> -->
+                                <!-- <div class="CS2Text"></div> -->
+                                <div id="CS2title" class="CS2GridArea">
+                                    <div class="CS2h3">
+                                        <a href="https://magpieeyes.github.io/UX_UI_HW_20/"><h3>Splitway</h3></a>
+                                    </div>
+                                </div>
+                                <div id="CS2Descript" class="CS2GridArea">
+                                    <p>Splitway Description. Lorem ipsum dolor sit amet consectetur. Elit viverra commodo sed consequat tristique morbi eget. Magna tortor hac eu velit mauris sed ut nec risus a rhoncus vitae.</p>
+                                </div>    
+                                <div id="CS2Image" class="CS2GridArea"></div>
+                            <!-- </div> -->
+                        </div>
                     </div>
                 </div>
             </section>
             <footer>
-                <div class="footer">
-                    <div class="Contact">Let's get in touch!</div>
+                <!-- <div class="footer"> -->
+                    <div class="contact" id="contact">Let's get in touch!</div>
                     <div class="links">
-                        <div class="email">
-                            <img class="emailIcon" src="images/email.png"> <p>julie.ng.382@gmail.com</p>
-                        </div>
+                        <a class="email" href="mailto:julie.ng.382@gmail.com">
+                            <div class="email">
+                                <img class="emailIcon" src="images/email.png"><p>julie.ng.382@gmail.com</p>
+                            </div>
+                        </a>
                         <div class="socialMedia">
-                            <img class="instagram" src="images/instagram.png">
-                            <img class="linkedin" src="images/linkedin.png">
+                            <a href="https://instagram.com/incridis?igshid=MzNlNGNkZWQ4Mg==">
+                                <img class="instagram" src="images/instagram.png">
+                            </a>
+                            <a href="...">
+                                <img class="linkedin" src="images/linkedin.png">
+                            </a>
+                            <a href="...">
+                                <img class="linkedin" src="images/linkedin.png">
+                            </a>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </footer>
             <script src="js/index.js"></script>
         </body>
